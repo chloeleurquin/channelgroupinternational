@@ -46,9 +46,10 @@ label {
 }
 .nav .nav-logo {
   margin-left: 5%;
+  height: 60px;
 }
 .nav .nav-logo object {
-  height: 60px;
+  height: 100%;
 }
 .nav .nav-sections {
   display: flex;
@@ -119,7 +120,25 @@ label {
 .nav .nav-languages a:hover {
   color: #F44336;
 }
-@media only screen and (max-width: 750px) {
+.desktop {
+  display: block;
+}
+.mobile {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .flex-mobile {
+    display: flex;
+  }
+  .container {
+    margin: 25px 10%;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
   .nav-icon {
     position: relative;
     display: block;
@@ -127,6 +146,7 @@ label {
     width: 50px;
     height: 66px;
     cursor: pointer;
+    margin-left: 2%;
   }
   .nav-icon:after {
     content: '';
@@ -137,6 +157,13 @@ label {
     top: 16px;
     left: 15px;
     box-shadow: 0 10px 0 1px #000, 0 16px 0 1px #000, 0 22px 0 1px #000;
+  }
+  .nav {
+    height: 56px;
+  }
+  .nav .nav-logo {
+    height: 40px;
+    margin-right: 5%;
   }
   .nav .nav-sections {
     position: absolute;
@@ -197,6 +224,15 @@ label {
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.6);
+  }
+  .footer {
+    padding: 25px 10%;
+  }
+  .footer .footer-sections {
+    flex-direction: column;
+  }
+  .footer .footer-sections .agency .agency-address {
+    padding-right: 20px;
   }
 }
 .index-video {

@@ -68,9 +68,10 @@ label {
 
 	.nav-logo {
 		margin-left: 5%;
+		height: 60px;
 
 		object {
-			height: 60px;
+			height: 100%;
 		}
 	}
 
@@ -155,7 +156,30 @@ label {
 		color: #F44336;
 	}
 }
-@media only screen and (max-width: 750px) {
+
+.desktop {
+	display: block;
+}
+
+.mobile {
+	display: none;
+}
+@media screen and (max-width: 800px) {
+	.flex-mobile {
+		display: flex;
+	}
+
+	.container {
+		margin: 25px 10%;
+	}
+	.desktop {
+		display: none;
+	}
+
+	.mobile {
+		display: block;
+	}
+
 	.nav-icon {
 		position: relative;
 		display: block;
@@ -163,6 +187,7 @@ label {
 		width: 50px;
 		height: 66px;
 		cursor: pointer;
+		margin-left: 2%;
 
 		&:after {
 			content: '';
@@ -177,6 +202,13 @@ label {
 	}
 
 	.nav {
+		height: 56px;
+
+		.nav-logo {
+			height: 40px;
+			margin-right: 5%;
+		}
+
 		.nav-sections {
 			position: absolute;
 			left: 0;
@@ -200,38 +232,38 @@ label {
 			.nav-section {
 				padding: 8%;
 			}
-				.travel {
-					color: #03A9F4;
 
-					.line {
-						background-color: #03A9F4;
-					}
+			.travel {
+				color: #03A9F4;
+
+				.line {
+					background-color: #03A9F4;
 				}
+			}
 
-				.advertising {
-					color: #9C27B0;
+			.advertising {
+				color: #9C27B0;
 
-					.line {
-						background-color: #9C27B0;
-					}
+				.line {
+					background-color: #9C27B0;
 				}
+			}
 
-				.viceversa {
-					color: #FFC107;
+			.viceversa {
+				color: #FFC107;
 
-					.line {
-						background-color: #FFC107;
-					}
+				.line {
+					background-color: #FFC107;
 				}
+			}
 
-				.manioc {
-					color: #4CAF50;
+			.manioc {
+				color: #4CAF50;
 
-					.line {
-						background-color: #4CAF50;
-					}
+				.line {
+					background-color: #4CAF50;
 				}
-
+			}
 		}
 	}
 
@@ -248,6 +280,18 @@ label {
 			right: 0;
 			bottom: 0;
 			background-color: rgba(0,0,0,0.6);
+		}
+	}
+
+	.footer {
+		padding: 25px 10%;
+		.footer-sections {
+			flex-direction: column;
+			.agency {
+				.agency-address {
+					padding-right: 20px;
+				}
+			}
 		}
 	}
 }
