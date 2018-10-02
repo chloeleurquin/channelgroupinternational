@@ -367,6 +367,9 @@ label {
 .footer .footer-sections .contact-infos .email {
   width: 100%;
 }
+.footer .footer-sections .social {
+  text-align: right;
+}
 @media only screen and (max-width: 800px) {
   .footer {
     padding: 25px 5%;
