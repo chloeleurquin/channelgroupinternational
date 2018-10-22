@@ -8,7 +8,12 @@ $(function(){
 
 $(document).ready(function(){
 
+	$("#navLanguages").click(function(){
+	    $("#langDropdown").fadeToggle();
+			$(".arrow").toggleClass('active');
+	});
 
+//page fx
 	$('#page_effect').fadeIn(500);
 
 	(function($) {

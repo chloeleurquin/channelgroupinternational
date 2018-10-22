@@ -1,4 +1,8 @@
 @charset "UTF-8";
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
 .index-video {
   width: 100%;
   height: 500px;
@@ -9,23 +13,208 @@
   width: 100%;
 }
 .index-header {
-  background-color: #9E9E9E;
-  height: 500px;
+  background-image: url("img/header.jpg");
   width: 100%;
   background-size: 780px;
   background-repeat: no-repeat;
 }
-.index-header .index-header-warp {
-  padding: 3% 6%;
-  font-size: 23px;
+.index-header .index-header-warp img {
+  width: 100%;
 }
-.index-quisommesnous {
-  margin: 50px 10%;
+.index-services .index-service-wrap {
+  margin: 80px 10%;
+  display: flex;
+  width: 100%;
 }
-.index-quisommesnous h2 {
-  color: #F44336;
+.index-services .index-service-wrap .index-service-television {
+  display: flex;
 }
-.index-quisommesnous strong {
-  color: #F44336;
+.index-services .index-service {
+  display: flex;
+}
+.index-services .index-service .title {
+  flex: 40%;
+  margin-right: 60px;
+}
+.index-services .index-service .title h4 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: normal;
+}
+.index-services .index-service .title h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.index-services .index-service .title .line {
+  height: 10px;
+  width: 100%;
+}
+.index-services .index-service .btn {
+  background-color: #fff;
+  border: solid #276EF1 2px;
+  border-radius: 30px;
+  padding: 17px 34px;
+  color: #276EF1;
+  width: max-content;
+  float: right;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.index-services .index-service .btn:hover {
+  background-color: #276EF1;
+  color: #fff;
+}
+.index-services .index-service h5 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+.index-services .index-service .infos {
+  flex: 60%;
+}
+.index-services .index-service .infos .description {
+  font-size: 20px;
+  padding-top: 25px;
+  margin-bottom: 40px;
+}
+.index-services .index-service .infos .extra {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+.index-services .digital .line {
+  background-color: #9C27B0;
+}
+.index-services .televison {
+  background-color: #F8F8F9;
+}
+.index-services .televison .index-service-wrap {
+  display: block;
+}
+.index-services .televison .line {
+  background-color: #FFC107;
+}
+.index-services .televison .shows {
+  display: flex;
+}
+.index-services .televison .shows .show-img {
+  flex: 28%;
+  margin-right: 2%;
+  height: 200px;
+  background-position: center;
+  background-size: contain;
+}
+.index-services .televison .shows .tele-1 {
+  background-image: url("img/index/tele-1.jpg");
+}
+.index-services .televison .shows .tele-2 {
+  background-image: url("img/index/tele-2.jpg");
+}
+.index-services .televison .shows .tele-3 {
+  background-image: url("img/index/tele-3.jpg");
+}
+.index-services .televison .shows .btn {
+  width: 6%;
+  padding: 0;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.index-services .transport .line {
+  background-color: #03A9F4;
+}
+.index-services .trajects {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.index-services .trajects .trajects-left {
+  width: 100%;
+  padding-right: 10%;
+}
+.index-services .trajects .trajects-left :last-child {
+  margin: 0;
+}
+.index-services .trajects .trajects-right {
+  width: 100%;
+  padding-left: 10%;
+  border-left: solid 1px #EEEEEE;
+}
+.index-services .trajects .trajects-right :last-child {
+  margin: 0;
+}
+.index-services .trajects .traject {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.index-services .trajects .traject .traject-text {
+  font-size: 16px;
+  margin-right: 10px;
+}
+.index-services .trajects .traject .traject-price {
+  color: #4A90E2;
   font-weight: bold;
+}
+.index-services .food {
+  background-color: #F8F8F9;
+}
+.index-services .food .line {
+  background-color: #4CAF50;
+}
+@media screen and (max-width: 830px) {
+  .index-services .trajects .trajects-left {
+    padding: 0;
+  }
+  .index-services .index-service .btn {
+    display: flex;
+    width: -webkit-fill-available;
+    justify-content: center;
+  }
+  .index-services .trajects {
+    flex-direction: column;
+  }
+  .index-services .trajects .trajects-right {
+    padding: 0;
+    border: none;
+    margin-top: 20px;
+  }
+  .index-services .index-service .title {
+    margin-right: 0;
+  }
+  .desktop-flex {
+    display: none;
+  }
+  .index-services .index-service .title h2 {
+    font-size: 26px;
+  }
+  .index-services .index-service .infos .description {
+    font-size: 18px;
+  }
+  .index-services .televison .shows {
+    flex-direction: column;
+  }
+  .index-services .televison .shows .show-img {
+    margin-bottom: 20px;
+  }
+  .index-services .televison .shows .btn {
+    width: 100%;
+  }
+  .index-services .index-service-wrap {
+    margin: 50px 5%;
+    flex-direction: column;
+  }
+  .index-services .index-service-wrap .index-service-television {
+    display: flex;
+    flex-direction: column;
+  }
+  .index-services .index-service-wrap .index-service-television .shows {
+    flex-direction: column;
+  }
+  .index-services .index-service-wrap .index-service-television .shows .show-img {
+    margin-bottom: 20px;
+  }
 }
