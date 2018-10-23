@@ -188,8 +188,8 @@ label {
   height: 30px;
   cursor: pointer;
 }
-.nav .nav-languages img {
-  margin-right: 5px;
+.nav .nav-languages :first-child {
+  margin-right: 10px;
 }
 .nav .nav-languages .arrow {
   width: 14px;

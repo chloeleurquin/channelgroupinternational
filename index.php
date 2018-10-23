@@ -42,7 +42,7 @@
             <a href="advertising.html" class="nav-section nav-advertising">
               <div class="nav-section-wrap">
               <div class="text">CHANNEL MEDIA AND DIGITAL ADVERTISING</div>
-              <div class="subtext">Communication Digitale</div>
+              <div class="subtext">Communication digitale</div>
             </div>
 
               <div class="line"></div>
@@ -50,7 +50,7 @@
             <a href="viceversa.html" class="nav-section nav-viceversa">
               <div class="nav-section-wrap">
               <div class="text">VICE-VERSA</div>
-              <div class="subtext">Television</div>
+              <div class="subtext">Télévision</div>
             </div>
 
               <div class="line"></div>
@@ -58,7 +58,7 @@
             <a href="travel.html" class="nav-section nav-travel">
               <div class="nav-section-wrap">
               <div class="text">CHANNEL TRAVEL COMPANY</div>
-              <div class="subtext">Transport et Tourisme</div>
+              <div class="subtext">Transport et tourisme</div>
             </div>
               <div class="line"></div>
             </a>
@@ -67,7 +67,7 @@
             <a href="manioc.html" class="nav-section nav-manioc">
               <div class="nav-section-wrap">
               <div class="text">BENYODI NDENG</div>
-              <div class="subtext">Distribution Agroalimentaire</div>
+              <div class="subtext">Distribution agroalimentaire</div>
             </div>
               <div class="line"></div>
             </a>
@@ -85,18 +85,9 @@
 
           <div class="nav-languages desktop-flex" id="navLanguages">
             <img src="style/img/fr-flag.svg">
-            <img class="arrow" src="style/img/arrow-icon.svg">
+            <img src="style/img/en-flag.svg">
           </div>
-            <div class="lang-dropdown" id="langDropdown" style="display:none;">
-              <div class="lang-dropdown-wrap">
-                <img src="style/img/fr-flag.svg">
-                <div>Français</div>
-              </div>
-              <div class="lang-dropdown-wrap">
-                <img src="style/img/en-flag.svg">
-                <div>English</div>
-              </div>
-            </div>
+
             <a href="http://channelgroupinternational.com" class="nav-logo mobile-flex">
             <img src="style/img/logo/logo2.jpg"/>
           </a>
@@ -116,7 +107,7 @@
             <div class="index-service-wrap">
               <div class="title">
                 <h4>Channel Group International fait de la</h4>
-                <h2>Communication Digitale</h2>
+                <h2>Communication digitale</h2>
                 <div class="line"></div>
               </div>
               <div class="infos">
@@ -140,7 +131,7 @@
               <div class="index-service-television">
                 <div class="title">
                   <h4>Channel Group International fait de la</h4>
-                  <h2>Television</h2>
+                  <h2>Télévision</h2>
                   <div class="line"></div>
                 </div>
                 <div class="infos">
@@ -149,9 +140,7 @@
 
                 </div>
               </div>
-              <h5>
-                Nos dernières émissions
-              </h5>
+
               <div class="shows">
                 <div class="show-img tele-1"></div>
                 <div class="show-img tele-2"></div>
@@ -165,7 +154,7 @@
             <div class="index-service-wrap">
               <div class="title">
                 <h4>Channel Group International fait du</h4>
-                <h2 style="max-width: 220px;">Transport et Tourisme</h2>
+                <h2 style="max-width: 220px;">Transport et tourisme</h2>
                 <div class="line"></div>
               </div>
               <div class="infos">
@@ -217,7 +206,7 @@
             <div class="index-service-wrap">
               <div class="title">
                 <h4>Channel Group International fait de la</h4>
-                <h2>Distribution Agroalimentaire</h2>
+                <h2>Distribution agroalimentaire</h2>
                 <div class="line"></div>
               </div>
               <div class="infos">
