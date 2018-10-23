@@ -1,8 +1,17 @@
-@charset "UTF-8";
-//START INDEX
+@charset "UTF-8"; //START INDEX
+
+body {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
 
 .container () {
 	margin: 50px 10%;
+}
+
+.transition-main () {
+	-webkit-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
 }
 
 .index-video {
@@ -16,32 +25,254 @@
 	}
 }
 
+
+
 .index-header {
-	background-color: #9E9E9E;
-	height: 500px;
+	background-image: url("img/header.jpg");
+	//height: 500px;
 	width: 100%;
 	background-size: 780px;
 	background-repeat: no-repeat;
 
 	.index-header-warp {
-		padding: 3% 6%;
-		font-size: 23px;
+		//padding: 3% 6%;
+		//font-size: 23px;
+		img {
+			width: 100%;
+		}
 	}
 }
 
+.index-services {
+.index-service-wrap {
+	margin: 80px 10%;
+	display: flex;
+	    width: 100%;
+			.index-service-television {
+				display: flex;
+
+			}
+}
+	.index-service {
+		display: flex;
+
+		.title {
+			flex: 40%;
+			margin-right: 60px;
+
+			h4 {
+				margin: 0;
+				padding: 0;
+				font-size: 14px;
+				font-weight: normal;
+			}
+
+			h2 {
+				margin: 0;
+				padding: 0;
+				font-size: 36px;
+				margin-bottom: 20px;
+			}
+
+			.line {
+				height: 10px;
+				width: 100%;
+			}
 
 
-.index-quisommesnous {
-	.container();
+		}
+		.btn {
+			background-color: #fff;
+			border: solid #276EF1 2px;
+			border-radius: 30px;
+			padding: 17px 34px;
+			color: #276EF1;
+			width: max-content;
+			float: right;
+			.transition-main ();
+			&:hover {
+				background-color: #276EF1;
+				color: #fff;
 
-h2 {
-	color: #F44336;
+			}
+		}
+		h5 {
+			margin: 0 0 10px;
+			font-size: 18px;
+		}
+		.infos {
+
+			flex: 60%;
+			.description {
+				font-size: 20px;
+				padding-top: 25px;
+			margin-bottom: 40px;
+		}
+
+			.extra {
+				font-size: 16px;
+				margin-bottom: 40px;
+
+			}
+
+		}
+
+
+
+
+	}
+	.digital {
+		.line {
+			background-color: #9C27B0;
+		}
+	}
+
+	.televison {
+		.index-service-wrap {
+			display: block;
+		}
+		background-color: #F8F8F9;
+		.line {
+			background-color: #FFC107;
+		}
+		.shows {
+			    display: flex;
+			.show-img {
+				flex: 28%;
+margin-right: 2%;
+				height: 200px;
+				background-position: center;
+    background-size: contain;
+			}
+			.tele-1 {
+				background-image: url("img/index/tele-1.jpg");
+			}
+			.tele-2 {
+				background-image: url("img/index/tele-2.jpg");
+			}
+			.tele-3 {
+				background-image: url("img/index/tele-3.jpg");
+			}
+
+			.btn {
+				width: 6%;
+				padding: 0;
+				    font-size: 40px;
+				display: flex;
+justify-content: center;
+align-items: center;
+
+			}
+		}
+	}
+
+	.transport {
+		.line {
+			background-color: #03A9F4;
+		}
+	}
+
+	.trajects {
+		margin-top: 20px;
+		margin-bottom: 40px;
+		display: flex;
+		justify-content: space-between;
+
+		.trajects-left {
+			:last-child {
+				margin: 0
+
+			}
+			width: 100%;
+    padding-right: 10%;
+		}
+		.trajects-right {
+			:last-child {
+				margin: 0
+
+			}
+			width: 100%;
+padding-left: 10%;
+border-left: solid 1px #EEEEEE;
+		}
+		.traject {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 20px;
+			.traject-text {
+				font-size: 16px;
+				margin-right: 10px;
+			}
+			.traject-price {
+
+			color: #4A90E2;
+			font-weight: bold;
+			}
+		}
+	}
+
+	.food {
+		background-color: #F8F8F9;
+		.line {
+			background-color: #4CAF50;
+		}
+	}
+
 }
 
+@media screen and (max-width: 830px) {
+	.index-services .trajects .trajects-left {
+		padding: 0;
+	}
+	.index-services .index-service .btn {
+		display: flex;
+width: -webkit-fill-available;
+justify-content: center;
+	}
+	.index-services .trajects {
+		flex-direction: column;
+		 .trajects-right {
+			 padding: 0;
+			 border: none;
+			     margin-top: 20px;
+		 }
+	}
+	.index-services .index-service .title {
+		margin-right: 0;
+	}
+	.desktop-flex {
+		display: none;
+	}
+	.index-services .index-service .title h2 {
+		font-size: 26px;
+	}
+	.index-services .index-service .infos .description {
+		font-size: 18px;
+	}
+	.index-services .televison .shows {
+		flex-direction: column;
+		.show-img {
+		margin-bottom: 20px;
+	}
+	.btn {
+		width: 100%;
+	}
 }
+.index-services .index-service-wrap {
+	margin: 50px 5%;
+	.index-service-television {
+		display: flex;
+		flex-direction: column;
+		.shows {
+			flex-direction: column;
+			.show-img {
+				    margin-bottom: 20px;
+			}
 
-.index-quisommesnous strong {
-	color: #F44336;
-	font-weight: bold;
+		}
+
+	}
+	flex-direction: column;
+}
 }
 //END INDEX
