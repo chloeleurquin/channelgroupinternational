@@ -211,7 +211,7 @@
               </div>
               <div class="infos">
                 <div class="description">
-                  Spécialisé dans la communication digitale le développement d’application web et mobiles à travers CHANNEL MEDIA AND DIGITAL ADVERTISING
+                  Cette distribution est spécialisée de produits agroalimentaires en général et du bâton de manioc en particulier élaborés auprès des ressortissants de l’Afrique centrale (Cameroun, Congo, Gabon, Centrafrique) à travers BENYODI NDENG.
                 </div>
 
                 <a href="manioc.html" class="btn btn-index-service">PLUS DE DETAILS</a>
